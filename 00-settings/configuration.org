@@ -1,0 +1,6 @@
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'default-frame-alist '(foreground-color . "#ffe97a"))
+  (add-to-list 'default-frame-alist '(background-color . "#002b00")) ; TODO: background color
+  (add-to-list 'default-frame-alist '(cursor-color . "red3"))
+
+#+END_SRC

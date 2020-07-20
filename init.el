@@ -1,3 +1,9 @@
+(mapc #'org-babel-load-file (directory-files
+			     (expand-file-name "00-settings"
+					       (file-name-directory (or (buffer-file-name)
+									load-file-name)))
+			     t "\\.org$"))
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
@@ -13,3 +19,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+

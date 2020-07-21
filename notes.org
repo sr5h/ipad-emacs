@@ -55,3 +55,7 @@
 									load-file-name)))
 			     t "\\.org$"))
 #+END_SRC 
+* etc
+** C-u C-x =
+** list-faces-display
+   

@@ -56,6 +56,12 @@
 									  load-file-name)))
 			       t "\\.org$"))
 #+END_SRC 
+
+* sbcl
+#+BEGIN_SRC bash
+sudo apt-get install sbcl
+#+END_SRC
+
 * etc
 ** C-u C-x =
 ** list-faces-display

@@ -27,6 +27,11 @@
 		      :foreground "grey" :background "grey20"
 		      :inverse-video nil
 		      :box '(:color "grey20" :style nil))
+  ;; distinguish linum on background
+  (set-face-attribute 'linum nil
+		      :foreground "grey" :background "grey20"
+		      :inverse-video nil
+		      :box '(:color "grey20" :style nil))
 #+END_SRC
 
 ** etc
@@ -40,4 +45,17 @@
 
   (savehist-mode 1)
 
+#+END_SRC
+
+* built-in
+** flyspell-mode
+#+BEGIN_SRC emacs-lisp
+  (add-hook 'lisp-mode-hook (lambda () (flyspell-mode)))
+  (add-hook 'text-mode-hook (lambda () (flyspell-mode)))
+#+END_SRC
+
+
+* slime
+#+BEGIN_SRC emacs-lisp
+  (setq inferior-lisp-program "/usr/bin/sbcl")
 #+END_SRC

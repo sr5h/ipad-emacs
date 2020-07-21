@@ -1,8 +1,8 @@
-(mapc #'org-babel-load-file (directory-files
-			     (expand-file-name ".00-settings"
-					       (file-name-directory (or (buffer-file-name)
-									load-file-name)))
-			     t "\\.org$"))
+(mapc #'org-babel-load-file
+      (directory-files
+       (expand-file-name ".00-settings"
+			 (file-name-directory (or (buffer-file-name) load-file-name)))
+       t "\\.org$"))
 
 (require 'package)
 (add-to-list 'package-archives

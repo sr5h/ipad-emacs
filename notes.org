@@ -2,8 +2,8 @@
 
 ** keyboard
 
-*** TODO how to change shortcut for selecting input-sourc?
-
+*** DONE how to change shortcut for selecting input-source?
+    
 *** keyboard settings
 **** in ipad(세팅 - 일반 - 하드웨어 키보드 - 보조키)
      1. Caps Lock -> Control
@@ -17,7 +17,8 @@
      3. (Capslock ->)Control : None, Control
      4. (Command ->)Option : None, Esc
      5. (Option ->)Command : None, Default
-	
+     6. Custom Presses
+	- Control + space : (action) Control + space
 * git
 
 ** install
@@ -49,11 +50,11 @@
 
 ** init.el
 #+BEGIN_SRC emacs-lisp
-(mapc #'org-babel-load-file (directory-files
-			     (expand-file-name "00-settings"
-					       (file-name-directory (or (buffer-file-name)
-									load-file-name)))
-			     t "\\.org$"))
+  (mapc #'org-babel-load-file (directory-files
+			       (expand-file-name "00-settings"
+						 (file-name-directory (or (buffer-file-name)
+									  load-file-name)))
+			       t "\\.org$"))
 #+END_SRC 
 * etc
 ** C-u C-x =
